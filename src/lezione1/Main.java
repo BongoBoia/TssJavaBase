@@ -14,9 +14,15 @@ public class Main {
     public static void main(String[] args){
         //dichiarazione variabili
         String inputS;
+        int inputI;
         System.out.println("lezione1 started...");
-        inputS=JOptionPane.showInputDialog("Inserire una frase:");
-        JOptionPane.showMessageDialog(null, "la frase digitata è: \n"+inputS);
+        inputS=JOptionPane.showInputDialog("Inserire un numero:");
+        try{
+            inputI=Integer.parseInt(inputS);
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null, "il numero inserito non è intero");
+        }
+        JOptionPane.showMessageDialog(null, "il numero inserito è: \n"+inputI);
         JDialog f=new JDialog();
         f.setTitle("Benvenuto");
         f.setSize(500,500);
