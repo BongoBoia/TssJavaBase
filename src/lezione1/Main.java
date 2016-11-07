@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args){
         //dichiarazione variabili
         String inputS;
-        int inputI;
+        int inputI=0;
         System.out.println("lezione1 started...");
         inputS=JOptionPane.showInputDialog("Inserire un numero:");
         try{
